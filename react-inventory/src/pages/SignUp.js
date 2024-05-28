@@ -14,8 +14,8 @@ export const SignUp = () => {
         <form className="space-y-6" action="#" method="POST">
           <div>
             <label
-              for="firstname"
-              className="block text-sm font-medium leading-6 text-gray-900"
+              htmlFor="firstname"
+              className="block text-left text-sm font-medium leading-6 text-gray-900"
             >
               First Name *
             </label>
@@ -24,14 +24,14 @@ export const SignUp = () => {
                 id="firstname"
                 name="firstname"
                 type="text"
-                autocomplete="firstname"
+                autoComplete="firstname"
                 required
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
             <label
-              for="lastname"
-              className="block text-sm font-medium leading-6 text-gray-900"
+              htmlFor="lastname"
+              className="block text-left text-sm font-medium leading-6 text-gray-900"
             >
               Last Name
             </label>
@@ -40,13 +40,13 @@ export const SignUp = () => {
                 id="lastname"
                 name="lastname"
                 type="text"
-                autocomplete="lastname"
+                autoComplete="lastname"
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
             <label
-              for="email"
-              className="block text-sm font-medium leading-6 text-gray-900"
+              htmlFor="email"
+              className="block text-left text-sm font-medium leading-6 text-gray-900"
             >
               Email Address *
             </label>
@@ -55,14 +55,14 @@ export const SignUp = () => {
                 id="email"
                 name="email"
                 type="email"
-                autocomplete="email"
+                autoComplete="email"
                 required
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
             <label
-              for="Phone"
-              className="block text-sm font-medium leading-6 text-gray-900"
+              htmlFor="Phone"
+              className="block text-left text-sm font-medium leading-6 text-gray-900"
             >
               Phone *
             </label>
@@ -71,14 +71,14 @@ export const SignUp = () => {
                 id="Phone"
                 name="Phone"
                 type="number"
-                autocomplete="Phone"
+                autoComplete="Phone"
                 required
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
             <label
-              for="stay"
-              className="block text-sm font-medium leading-6 text-gray-900"
+              htmlFor="stay"
+              className="block text-left text-sm font-medium leading-6 text-gray-900"
             >
               Number of days of stay *
             </label>
@@ -87,7 +87,7 @@ export const SignUp = () => {
                 id="stay"
                 name="stay"
                 type="number"
-                autocomplete="stay"
+                autoComplete="stay"
                 required
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -97,8 +97,8 @@ export const SignUp = () => {
           <div>
             <div className="flex items-center justify-between">
               <label
-                for="password"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                htmlFor="password"
+                className="block text-left text-sm font-medium leading-6 text-gray-900"
               >
                 Password *
               </label>
@@ -108,7 +108,7 @@ export const SignUp = () => {
                 id="password"
                 name="password"
                 type="password"
-                autocomplete="current-password"
+                autoComplete="current-password"
                 required
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -126,12 +126,11 @@ export const SignUp = () => {
         </form>
 
         <p className="mt-10 text-center text-sm text-gray-500">
-          Not a member?
-          <Link
-            to="/signup"
-            className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-          >
-            Create your account <span>SignUp</span>
+          <span className="pr-2">Already have user account</span>
+          <Link to="/signin" className="font-semibold leading-6">
+            <span className=" text-indigo-600 hover:text-indigo-500">
+              Login
+            </span>
           </Link>
         </p>
       </div>
